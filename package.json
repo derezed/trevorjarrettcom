@@ -1,0 +1,24 @@
+{
+  "name": "trevorjarrettcom",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:esbuild": "node ./dev.esbuild.config.js",
+    "dev:css": "npx tailwindcss -i ./src/styles/index.css -o ./web/assets/index.css --watch",
+    "dev": "npm-run-all --parallel dev:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "easeljs": "^1.0.2",
+    "esbuild": "^0.16.10"
+  }
+}
