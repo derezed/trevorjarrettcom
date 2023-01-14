@@ -13,8 +13,6 @@
 /craft
 me.afdesign
 
-/src/scripts/
-
 # Numerous always-ignore extensions
 *.diff
 *.err
