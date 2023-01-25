@@ -2,36 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-.speech-bubble-about,
-.speech-bubble-work,
-.speech-bubble-blog {
+body main {
+    margin: 0px 0px;
+    overflow: auto;
+}
+
+.DesktopNav .speech-bubble-about,
+.DesktopNav .speech-bubble-work,
+.DesktopNav .speech-bubble-blog {
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 250ms;
 }
 
-.speech-bubble-about:hover,
-.speech-bubble-work:hover,
-.speech-bubble-blog:hover {
+.DesktopNav .speech-bubble-about:hover,
+.DesktopNav .speech-bubble-work:hover,
+.DesktopNav .speech-bubble-blog:hover {
     animation-play-state: paused;
 }
 
-.speech-bubble-about {
+.DesktopNav .speech-bubble-about {
     animation-delay: -2s;
 }
 
-.speech-bubble-work {
+.DesktopNav .speech-bubble-work {
     animation-delay: -1s;
 }
 
-.speech-bubble-about {
+.DesktopNav .speech-bubble-about {
     animation-delay: -3s;
 }
 
-.speech-bubble-about::after,
-.speech-bubble-work::after,
-.speech-bubble-blog::after {
+.DesktopNav .speech-bubble-about::after,
+.DesktopNav .speech-bubble-work::after,
+.DesktopNav .speech-bubble-blog::after {
     content: '';
     display: block;
     width: 0;
@@ -45,12 +52,17 @@
     transform: translateX(-50%);
 }
 
-.floating {
-    animation-name: floating;
-    animation-delay: -2s, -1s, -3s;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+.fadeOut {
+    visibility: none;
+    opacity: 0;
+    transition: opacity 250ms;
+    pointer-events: none;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 250ms;
+    pointer-events: none;
 }
 
 @keyframes floating {

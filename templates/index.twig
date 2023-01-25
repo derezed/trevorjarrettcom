@@ -9,27 +9,44 @@
     <link href="/assets/index.css" rel="stylesheet">
 </head>
     <body class='bg-sky-400'>
-        <main class='w-full h-screen'>
-            <nav class='flex flex-col items-center gap-y-20 pt-5'>
-                <a href='#' class='speech-bubble-about bg-white relative text-center rounded-full w-36 h-24 flex flex-col justify-center'>
+        <main id='ScrollingContainer' class='w-full h-auto pt-5'>
+            <div class='w-full min-h-[272px]'>
+                <nav class='DesktopNav flex flex-col items-center gap-y-20'>
+                    <a href='#' class='speech-bubble-about bg-white relative text-center rounded-full w-36 h-24 flex flex-col justify-center'>
+                        <span class='z-10 relative'>About</span>
+                    </a>
+
+                    <div class='flex w-full justify-evenly'>
+                        <a href='#' class='speech-bubble-work bg-white relative text-center rounded-full w-36 h-24 flex flex-col justify-center'>
+                            <span class='z-10 relative'>Work</span>
+                        </a>
+                        
+                        <a href='#' class='speech-bubble-blog bg-white relative text-center rounded-full w-36 h-24 flex flex-col justify-center'>
+                            <span class='z-10 relative'>Blog</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <nav class='MobileNav flex flex-col items-center fixed right-2 z-10 gap-y-5 bottom-6 opacity-0 hidden'>
+                <a href='#' class='speech-bubble-about bg-white relative text-center rounded-full w-[72px] h-[48px] flex flex-col justify-center shadow-lg'>
                     <span class='z-10 relative'>About</span>
                 </a>
 
-                <div class='flex w-full justify-evenly'>
-                    <a href='#' class='speech-bubble-work bg-white relative text-center rounded-full w-36 h-24 flex flex-col justify-center'>
-                        <span class='z-10 relative'>Work</span>
-                    </a>
-                    <a href='#' class='speech-bubble-blog bg-white relative text-center rounded-full w-36 h-24 flex flex-col justify-center'>
-                        <span class='z-10 relative'>Blog</span>
-                    </a>
-                </div>
+                <a href='#' class='speech-bubble-work bg-white relative text-center rounded-full w-[72px] h-[48px] flex flex-col justify-center shadow-lg'>
+                    <span class='z-10 relative'>Work</span>
+                </a>
+                
+                <a href='#' class='speech-bubble-blog bg-white relative text-center rounded-full w-[72px] h-[48px] flex flex-col justify-center shadow-lg'>
+                    <span class='z-10 relative'>Blog</span>
+                </a>
             </nav>
 
             {# Cartoon Trevor #}
             <section class='relative w-full flex flex-col'>
-                <div class='min-h-[45vh] h-full'>&nbsp;</div>
+                <div class='min-h-[35vh] h-full'>&nbsp;</div>
 
-                <svg class='w-full' viewBox="0 0 421 625" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <svg class='step w-full' data-step="CartoonTJ" viewBox="0 0 421 625" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                     <g transform="matrix(1,0,0,1,-85.7675,-69.0466)">
                         <g id="Cartoon-Me" serif:id="Cartoon Me" transform="matrix(0.764068,0,0,0.7073,157.141,-113.707)">
                             <g id="Shirt" transform="matrix(2.57594,0,0,2.70645,-288.777,-264.029)">

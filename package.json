@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "easeljs": "^1.0.2",
-    "esbuild": "^0.16.10"
+    "esbuild": "^0.16.10",
+    "scrollama": "^2.2.2"
   }
 }
