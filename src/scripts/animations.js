@@ -22,8 +22,6 @@ export default class Animations {
     }
     
     handleNavigationStateChange(state) {
-        // 0 = single button/off
-        // 1 = floating bubbles/on
         if (state === 0) {
             this.desktopNavigation.classList.add('fadeOut');
             this.desktopNavigation.classList.remove('fadeIn');

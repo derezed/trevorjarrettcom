@@ -7,35 +7,6 @@ body main {
     overflow: auto;
 }
 
-.DesktopNav .speech-bubble-about,
-.DesktopNav .speech-bubble-work,
-.DesktopNav .speech-bubble-blog {
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    transition-property: all;
-    transition-duration: 250ms;
-}
-
-.DesktopNav .speech-bubble-about:hover,
-.DesktopNav .speech-bubble-work:hover,
-.DesktopNav .speech-bubble-blog:hover {
-    animation-play-state: paused;
-}
-
-.DesktopNav .speech-bubble-about {
-    animation-delay: -2s;
-}
-
-.DesktopNav .speech-bubble-work {
-    animation-delay: -1s;
-}
-
-.DesktopNav .speech-bubble-about {
-    animation-delay: -3s;
-}
-
 .DesktopNav .speech-bubble-about::after,
 .DesktopNav .speech-bubble-work::after,
 .DesktopNav .speech-bubble-blog::after {
@@ -69,4 +40,35 @@ body main {
     0% { transform: translate(0, 0px); }
     50% { transform: translate(0, 15px); }
     100% { transform: translate(0, -0px); }
+}
+
+@media (min-width: 1024px) {
+    .DesktopNav .speech-bubble-about,
+    .DesktopNav .speech-bubble-work,
+    .DesktopNav .speech-bubble-blog {
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transition-property: all;
+        transition-duration: 250ms;
+    }
+
+    .DesktopNav .speech-bubble-about:hover,
+    .DesktopNav .speech-bubble-work:hover,
+    .DesktopNav .speech-bubble-blog:hover {
+        animation-play-state: paused;
+    }
+
+    .DesktopNav .speech-bubble-about {
+        animation-delay: -2s;
+    }
+
+    .DesktopNav .speech-bubble-work {
+        animation-delay: -1s;
+    }
+
+    .DesktopNav .speech-bubble-about {
+        animation-delay: -3s;
+    }
 }
