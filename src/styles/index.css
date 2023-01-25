@@ -1,3 +1,53 @@
+@font-face {
+    font-family: Roboto;
+    src: url('/assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: RobotoBlack;
+    src: url('/assets/fonts/Roboto/Roboto-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: RobotoBlackItalic;
+    src: url('/assets/fonts/Roboto/Roboto-BlackItalic.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url('/assets/fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url('/assets/fonts/Roboto/Roboto-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url('/assets/fonts/Roboto/Roboto-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: RobotoLightItalic;
+    src: url('/assets/fonts/Roboto/Roboto-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url('/assets/fonts/Roboto/Roboto-Medium.ttf');
+    font-weight: 600;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +55,21 @@
 body main {
     margin: 0px 0px;
     overflow: auto;
+}
+
+a {
+    font-family: Roboto;
+}
+
+.AboutTJ h2 {
+    font-family: RobotoMedium;
+    font-size: 32px;
+}
+
+.AboutTJ p {
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-size: 20px;
 }
 
 .DesktopNav .speech-bubble-about::after,

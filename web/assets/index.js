@@ -618,8 +618,8 @@
       this.scroller = (0, import_scrollama.default)();
       this.scroller.setup({
         step: ".step",
-        debug: true,
-        offset: 0.7,
+        debug: false,
+        offset: 0.5,
         container: document.querySelector("body")
       }).onStepEnter((response) => {
         this.handleStepEnter(response);
